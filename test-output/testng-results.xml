@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="97" started-at="2016-08-14T03:35:17Z" finished-at="2016-08-14T03:35:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="97" started-at="2016-08-14T03:35:17Z" finished-at="2016-08-14T03:35:17Z">
+      <class name="com.Selenium.WeekClasses.ExampleDataProvider">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Selenium.WeekClasses.ExampleDataProvider@c038203]" name="setup" is-config="true" duration-ms="26" started-at="2016-08-14T09:05:17Z" finished-at="2016-08-14T09:05:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="gmailLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.Selenium.WeekClasses.ExampleDataProvider@c038203]" name="gmailLoginTest" duration-ms="13" started-at="2016-08-14T09:05:17Z" data-provider="gmailuserdetails" finished-at="2016-08-14T09:05:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seleniumtraning@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailLoginTest -->
+        <test-method status="PASS" signature="gmailLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.Selenium.WeekClasses.ExampleDataProvider@c038203]" name="gmailLoginTest" duration-ms="6" started-at="2016-08-14T09:05:17Z" data-provider="gmailuserdetails" finished-at="2016-08-14T09:05:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[selenium123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailLoginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.Selenium.WeekClasses.ExampleDataProvider@c038203]" name="teardown" is-config="true" duration-ms="1" started-at="2016-08-14T09:05:17Z" finished-at="2016-08-14T09:05:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.Selenium.WeekClasses.ExampleDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium]">
+  <parameter name="password" value="password123"/>
+  <parameter name="username" value="NageswaraRao"/>
+  <test name="Training TestCase">
+    <classes>
+      <class name="com.Selenium.WeekClasses.ParameterFromTestNGXMLExample"/>
+    </classes>
+  </test> <!-- Training TestCase -->
+  <test name="Training TestCase(failed)">
+    <classes>
+      <class name="com.Selenium.WeekClasses.ParameterFromTestNGXMLExample">
+        <methods>
+          <include name="teardown"/>
+          <include name="testLogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Selenium.WeekClasses.ParameterFromTestNGXMLExample -->
+    </classes>
+  </test> <!-- Training TestCase(failed) -->
+</suite> <!-- Failed suite [Selenium] -->

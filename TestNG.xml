@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selenium" verbose="1">
+
+	<test name="Training TestCase">
+		<groups>
+			<run>
+				 
+				<include name="smoketest" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.Selenium.WeekClasses.TestNGExample1" />
+			<class name="com.Selenium.WeekClasses.TestNGExample2" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Selenium]]">
+  <test name="Training TestCase">
+    <classes>
+      <class name="com.Selenium.WeekClasses.TestNGExample1"/>
+      <class name="com.Selenium.WeekClasses.TestNGExample2"/>
+    </classes>
+  </test> <!-- Training TestCase -->
+  <test name="Training TestCase(failed)">
+    <classes>
+      <class name="com.Selenium.WeekClasses.TestNGExample1">
+        <methods>
+          <include name="TC_01_loginpage"/>
+          <include name="TC_04_inputrequestFromTestCase"/>
+          <include name="TC_02_fillingRestration"/>
+        </methods>
+      </class> <!-- com.Selenium.WeekClasses.TestNGExample1 -->
+      <class name="com.Selenium.WeekClasses.TestNGExample2">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Selenium.WeekClasses.TestNGExample2 -->
+    </classes>
+  </test> <!-- Training TestCase(failed) -->
+</suite> <!-- Failed suite [Failed suite [Selenium]] -->

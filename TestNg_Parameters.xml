@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selenium" verbose="1">
+ <parameter name="username"  value="NageswaraRao"/>
+<parameter name="password"  value="password123"/>
+	<test name="Training TestCase">
+		<classes>
+			<class name="com.Selenium.WeekClasses.ParameterFromTestNGXMLExample" />
+		 
+		</classes>
+	</test>
+</suite>
