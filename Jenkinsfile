@@ -2,7 +2,7 @@ pipeline {
 agent any
     stages {
    
-        stage('Build') {
+        stage('Maven install Build') {
             steps {
                 script {
                     sh 'curl -s "https://apache.mirror.digitalpacific.com.au/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz" | tar xz'
