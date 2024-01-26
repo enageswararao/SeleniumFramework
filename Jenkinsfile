@@ -1,18 +1,7 @@
 pipeline {
 agent any
     stages {
-   
-        stage('Maven install Build') {
-            steps {
-                script {
-                    sh 'curl -s "https://apache.mirror.digitalpacific.com.au/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz" | tar xz'
-                    sh 'export PATH=$PATH:/path/to/extracted/apache-maven-3.8.4/bin'
-                    sh 'mvn clean install'
-                }
-            }
-        }
-    
-      
+           
         stage('Build') {
             steps {
                 sh 'mvn -version'
