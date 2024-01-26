@@ -3,7 +3,7 @@ agent any
     stages {
       stage('Back-end') {
             agent {
-                docker {
+                any {
                   label 'dockerserver'   
                   image 'maven:3-alpine'
                 }
