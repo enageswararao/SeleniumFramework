@@ -1,17 +1,17 @@
 pipeline {
 agent any
     stages {
-      stage('Back-end') {
-            agent {
-                any {
-                  label 'dockerserver'   
-                  image 'maven:3-alpine'
+      stages {
+        stage('Build') {
+            steps {
+                script {
+                    sh 'curl -s "https://apache.mirror.digitalpacific.com.au/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz" | tar xz'
+                    sh 'export PATH=$PATH:/path/to/extracted/apache-maven-3.8.4/bin'
+                    sh 'mvn clean install'
                 }
             }
-            steps {
-                sh 'mvn --version'
-            }
         }
+    }
       
         stage('Build') {
             steps {
